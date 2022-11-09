@@ -1,0 +1,11 @@
+a li.list-group-item{
+  border:none;
+}
+
+ul.list-group a{
+  text-decoration: none;
+}
+
+label.dark-mode{
+  cursor: pointer;
+}

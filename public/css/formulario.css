@@ -1,0 +1,67 @@
+:root {
+    --cor-principal: rgb(73, 113, 149);
+    --cor-secundaria: rgb(222, 228, 235);
+    --body-color:#555;
+}
+/*CSS Menu*/
+nav {
+    width: 100%;
+    background-color: aquamarine;
+   
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li{
+    border-bottom: 1px solid var(--cor-secundaria);
+}
+
+nav ul li a {
+    background-color: var(--cor-principal);
+    color: #FFF;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    transition: background .3s;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-principal);
+}
+
+.modal-content{
+    width: 350px;
+}
+
+ul.logos{
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
+}
+
+#tamanhoMenu{
+    margin-top: -650px;
+}
+#tamanhoContainer{
+  width: 500px;
+}
+
+#botão{
+    background-color: #FF1168;
+    color:rgb(222, 228, 235);
+    font-weight: bold;
+    align-items:center;
+}
+
+.btn .btn-info{
+    color: white;
+}
+
+.list-group-item:hover {
+    background-color: var(--body-color);
+}
