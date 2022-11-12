@@ -11,6 +11,7 @@ class ClassListarProjeto extends ClassConexao{
   protected function selecionaProjetos()
   {
     $sql = 'SELECT 
+      p.idProjeto,
       p.proposta, 
       p.data_inicio, 
       p.data_termino, 

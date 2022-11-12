@@ -56,17 +56,17 @@ class ControllerRelatorios{
     $this->data_final = $_POST['data_final'];
   }
 
-    public function getDatabaseConfigMysql()
-    {
-        return [
-            'driver'   => 'mysql',
-            'host'     => 
-            'port'     => 
-            'username' => 
-            'password' => 
-            'database' => 
-        ];
-    }
+    // public function getDatabaseConfigMysql()
+    // {
+    //     return [
+    //         'driver'   => 'mysql',
+    //         'host'     => 
+    //         'port'     => 
+    //         'username' => 
+    //         'password' => 
+    //         'database' => 
+    //     ];
+    // }
  
     public function generateReport()
     {   

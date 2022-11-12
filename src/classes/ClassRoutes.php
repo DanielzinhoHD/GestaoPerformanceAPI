@@ -29,7 +29,8 @@ class ClassRoutes{
       'addcliente'=>"ControllerAddCliente",
       'graficos'=>"ControllerGraficos",
       'relatorios'=>"ControllerRelatorios",
-      'listarProjetos'=>"ControllerListarProjeto"
+      'listarProjetos'=>"ControllerListarProjeto",
+      'api'=>"ControllerApi"
     );
 
 

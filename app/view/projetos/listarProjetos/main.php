@@ -10,6 +10,7 @@ $listarProjetos = new ControllerListarProjeto();
     <table class="table">
         <thead>
          <tr>
+            <th scope="col">ID</th>
             <th scope="col">Proposta</th>
             <th scope="col">Cliente</th>
             <th scope="col">Data Inicio</th>
@@ -21,6 +22,7 @@ $listarProjetos = new ControllerListarProjeto();
                 foreach($projetos as $key => $value){
                 ?>    
                     <tr>
+                        <td><?php echo $value['idProjeto']?></td>
                         <td><?php echo $value['proposta']?></td>
                         <td><?php echo $value['nome_cliente']?></td>
                         <td><?php echo $value['data_inicio']?></td>
