@@ -7,4 +7,4 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="<?php echo DIRCSS.'formulario.css'?>">
+<link rel="stylesheet" href="<?php echo DIRCSS.'home.css'?>">

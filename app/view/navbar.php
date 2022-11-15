@@ -9,9 +9,8 @@
       ?>
       </span>
       <label class= "dark-mode" for="switch">
-         
-        <input type="checkbox" id="switch" > Modo escuro
-   
+
+        <a href="#" class="switch-dark-mode" type="checkbox" id="switch"> <span class="material-icons">contrast</span> Modo escuro</a>
     
       </label>
   

@@ -90,33 +90,6 @@ body{
   transform: translate(-50%, -50%);
 }
 
-  /* TELA DE LOGIN */ 
-.container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.content{
-  border-radius: 15px;
-  background-color: var( --body-bg:#fafafa);
-  color: var(--body-color:#555);
-  width: 960px;
-  height: 50%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-}
-
-.content::before{
-  content: "";
-  position: absolute;
-  background-color: #5893af;
-  width: 40%;
-  height: 100%;
-}
 
 .title{
   font-size: 20px;
@@ -142,21 +115,6 @@ body{
   color:#fff;
 }
 
-.btn{
-  border-radius: 15px;
-  text-transform: uppercase;
-  color: #fff;
-  font-size: 10px;
-  padding: 10px 50px;
-  cursor: pointer;
-  align-self: center;
-  border-width: 0;
-}
-
-.btn-second{
-  background-color: #5893af;
-  border: 1px solid #5893af;
-}
 
 .btn.link{
   background-color: #f57207;
@@ -186,30 +144,5 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.form{
-  display: flex;
-  flex-direction: column;
-  width: 55%;
-}
-
-.form input{
-  height: 45px;
-  border: none;
-  background-color: #ecf0f1;
-  margin: 8px;
-}
-  
-.container{
-  width: 600px;
-  height: 600px;
-  text-align:center;
-  position: absolute;
-    top: 45%;
-    left: 49%;
-    transform: translate(-50%, -50%);
-    background-color: var(--body-form);
-    color:var(--body-color);
 }
 

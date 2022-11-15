@@ -9,3 +9,8 @@ ul.list-group a{
 label.dark-mode{
   cursor: pointer;
 }
+
+.switch-dark-mode {
+  text-decoration:none;
+  display: flex;
+}

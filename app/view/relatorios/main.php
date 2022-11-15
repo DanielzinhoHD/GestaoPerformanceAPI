@@ -1,27 +1,4 @@
-<nav class="navbar navbar-light bg-light shadow">
-    <div class="container-fluid">
-      <span class="navbar-brand mb-0 h1">
-        SMARTFAST
-      <?php 
-        if(isset($_SESSION['id'])){
-          echo ' - '.ucfirst($_SESSION['name']);
-        } 
-      ?>
-      </span>
-      <label class= "dark-mode" for="switch">
-         
-        <input type="checkbox" id="switch" > Modo escuro
-   
-    
-      </label>
-  
-      <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
-  </nav>
-
-  <div class="modal true" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal true" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-fullscreen">
       <div class="modal-content">
         <div class="modal-header">
