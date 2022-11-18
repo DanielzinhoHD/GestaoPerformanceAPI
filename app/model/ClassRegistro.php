@@ -31,12 +31,12 @@ class ClassRegistro extends ClassConexao {
       
     }
 
-    protected function createUser($name, $email, $password){
-        $sql = "INSERT INTO usuarios (nome, email, senha) VALUES (?, ?, ?);";
+    protected function createUser($name, $email, $password, $cep, $logradouro, $complemento, $bairro, $localidade, $uf, $numero){
+        $sql = "INSERT INTO usuarios (nome, email, senha, cep, logradouro, complemento, bairro, localidade, uf, numero) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
         $this->stmt = $this->conexaoDB()->prepare($sql);       
        
         $hashedPwd = password_hash($password, PASSWORD_DEFAULT);
-        $this->stmt->execute(array($name,$email,$hashedPwd));        
+        $this->stmt->execute(array($name,$email,$hashedPwd, $cep, $logradouro, $complemento, $bairro, $localidade, $uf, $numero));        
         $this->stmt = null;       
         exit();
     }

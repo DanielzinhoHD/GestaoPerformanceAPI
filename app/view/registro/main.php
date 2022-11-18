@@ -22,9 +22,9 @@
                 </div>
 
                 <div class="col-12 mb-3">
-                  <label for="email" class="form-label">Nome:</label>
+                  <label for="nome" class="form-label">Nome:</label>
                   <div class="input-group has-validation">
-                    <input type="text" placeholder="Nome" name="nome" class="form-control" id="email" required>
+                    <input type="text" placeholder="Nome" name="nome" class="form-control" id="nome" required>
                     <div class="invalid-feedback">Por favor insira seu nome de usuário.</div>
                   </div>
                 </div>
@@ -47,6 +47,46 @@
                   <label for="passowrd" class="form-label">Confirmar Senha:</label>
                   <input type="password" placeholder="Confirmar Senha" name="Confirmarsenha" class="form-control" id="password2" required>
                   <div class="invalid-feedback">Por favor, insira sua senha!</div>
+                </div>
+
+                <div class="col-12 mb-3">
+                  <label for="cep" class="form-label">Digite seu cep:</label>
+                  <input type="text" placeholder="Somente números" name="cep" class="form-control" id="cep" required>
+                  <div class="invalid-feedback">Por favor, insira seu CEP!</div>
+                </div>
+
+                <div class="col-12 mb-3">
+                      <button type="button" id="pesquisarCEP" class="btn btn-primary" name="pesquisarCEP">Pesquisar CEP</button>
+                </div>
+
+                <div class="col-12 mb-3">
+                  <label for="logradouro" class="form-label">Endereço:</label>
+                  <input type="text" placeholder="Endereço" name="logradouro" class="form-control" id="logradouro">
+                </div>
+
+                <div class="col-12 mb-3">
+                  <label for="complemento" class="form-label">Complemento:</label>
+                  <input type="text" placeholder="Complemento" name="complemento" class="form-control" id="complemento">
+                </div>
+
+                <div class="col-12 mb-3">
+                  <label for="bairro" class="form-label">Bairro:</label>
+                  <input type="text" placeholder="Bairro" name="bairro" class="form-control" id="bairro">
+                </div>
+
+                <div class="col-12 mb-3">
+                  <label for="localidade" class="form-label">Município:</label>
+                  <input type="text" placeholder="Município" name="localidade" class="form-control" id="localidade">
+                </div>
+
+                <div class="col-12 mb-3">
+                  <label for="uf" class="form-label">UF:</label>
+                  <input type="text" placeholder="UF" name="uf" class="form-control" id="uf">
+                </div>
+
+                <div class="col-12 mb-3">
+                  <label for="numero" class="form-label">Número:</label>
+                  <input type="text" placeholder="Número" name="numero" class="form-control" id="numero">
                 </div>
 
                 <p id="error-msg"></p>
@@ -80,7 +120,8 @@
 
 <?php 
   include_once DIRJS.'darkmode.php';
-  include_once DIRJS.'registrar.php';  
+  include_once DIRJS.'registrar.php';
+  include_once DIRJS.'cepAPI.php';  
 ?>
 
 
