@@ -9,6 +9,13 @@ Class ControllerRegistro extends ClassRegistro{
     protected $email;
     protected $pw;
     protected $pw2;
+    protected $cep;
+    protected $logradouro;
+    protected $complemento;
+    protected $bairro;
+    protected $localidade;
+    protected $uf;
+    protected $numero;
 
     public function __construct()
     {
@@ -62,7 +69,51 @@ Class ControllerRegistro extends ClassRegistro{
             return false;
         }
 
+        if($_POST['cep'] !== ''){
+            $this->cep=filter_input(INPUT_POST, 'cep', FILTER_SANITIZE_SPECIAL_CHARS);
+        }else{
+            return false;
+        }
+
+        if($_POST['logradouro'] !== ''){
+            $this->logradouro=filter_input(INPUT_POST, 'logradouro', FILTER_SANITIZE_SPECIAL_CHARS);
+        }else{
+            return false;
+        }
+
+        if($_POST['complemento'] !== ''){
+            $this->complemento=filter_input(INPUT_POST, 'complemento', FILTER_SANITIZE_SPECIAL_CHARS);
+        }else{
+            return false;
+        }
+
+        if($_POST['bairro'] !== ''){
+            $this->bairro=filter_input(INPUT_POST, 'bairro', FILTER_SANITIZE_SPECIAL_CHARS);
+        }else{
+            return false;
+        }
+
+        if($_POST['localidade'] !== ''){
+            $this->localidade=filter_input(INPUT_POST, 'localidade', FILTER_SANITIZE_SPECIAL_CHARS);
+        }else{
+            return false;
+        }
+
+        if($_POST['uf'] !== ''){
+            $this->uf=filter_input(INPUT_POST, 'uf', FILTER_SANITIZE_SPECIAL_CHARS);
+        }else{
+            return false;
+        }
+
+        if($_POST['numero'] !== ''){
+            $this->numero=filter_input(INPUT_POST, 'numero', FILTER_SANITIZE_SPECIAL_CHARS);
+        }else{
+            return false;
+        }
+
         return true;
+
+
     }
     public function Cadastrar()
     {
@@ -78,6 +129,6 @@ Class ControllerRegistro extends ClassRegistro{
             exit();
         }
 
-        parent::createUser($this->nome,$this->email,$this->pw);
+        parent::createUser($this->nome,$this->email,$this->pw,$this->cep,$this->logradouro,$this->complemento,$this->bairro,$this->localidade,$this->uf,$this->numero);
     }
 }

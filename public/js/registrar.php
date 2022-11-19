@@ -12,11 +12,32 @@
         
         const pw2 = $('input[name="Confirmarsenha"]').val();
 
+        const cep = $('input[name="cep"]').val();
+
+        const logradouro = $('input[name="logradouro"]').val();
+
+        const complemento = $('input[name="complemento"]').val();
+
+        const bairro = $('input[name="bairro"]').val();
+
+        const localidade = $('input[name="localidade"]').val();
+
+        const uf = $('input[name="uf"]').val();
+
+        const numero = $('input[name="numero"]').val();
+
         $.post(DIRPAGE+'registro/Cadastrar',{
            nome:name,
            email:email,
            senha:pw,
            Confirmarsenha:pw2,
+           cep:cep,
+           logradouro:logradouro,
+           complemento:complemento,
+           bairro:bairro,
+           localidade:localidade,
+           uf:uf,
+           numero:numero,
            submit:true
         }).done((erro)=>{
             if(!erro){

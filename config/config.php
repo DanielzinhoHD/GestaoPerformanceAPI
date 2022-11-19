@@ -3,7 +3,7 @@
 #Arquivos diretórios raízes;
 
 // $PastaInterna= 'GestaoPerformance/';
-$PastaInterna='GestaoPerformance/';
+$PastaInterna='GestaoPerformanceAPI/';
 define('DIRPAGE', "http://{$_SERVER['HTTP_HOST']}/{$PastaInterna}");
 
 if(substr($_SERVER['DOCUMENT_ROOT'], -1) == '/'){
@@ -20,6 +20,6 @@ define('DIRADM', DIRPAGE."public/adm/");
 
 #Acesso ao banco de dados;
 define('HOST', "localhost");
-define('DB', "smartfast");
+define('DB', "smartfastapi");
 define('USER', "root");
 define('PW', "");
